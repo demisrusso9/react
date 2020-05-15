@@ -1,0 +1,38 @@
+body {
+    background: #99A3A4;
+    color: #fff;
+    font-family: Oswald;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+.container {
+    background: #273746;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.caixa {
+    background: red;
+    height: 80px;
+    width: 80px;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.lista-item:hover {
+    cursor: pointer;
+}
