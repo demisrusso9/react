@@ -1,0 +1,19 @@
+.desafioTabela table {
+    width: 100%;
+}
+
+.desafioTabela th {
+    background-color: darkcyan;
+}
+
+td, th {
+    font-size: 1rem;
+}
+
+tr {
+    background-color: #ddd;
+}
+
+tr:nth-child(2n) {
+    background-color: #FFF;
+}

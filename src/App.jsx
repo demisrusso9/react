@@ -11,15 +11,43 @@ import Familia from './components/Basicos/Familia'
 import FamiliaMembro from './components/Basicos/FamiliaMembro'
 import Card from './components/layout/Card'
 
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import ListaProdutos from './components/repeticao/ListaProdutos'
+
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+
+import Direta from './components/comunicacao/Direta'
+import DiretaFilho from './components/comunicacao/DiretaFilho'
+
+
 export default () =>
     <div className='App'>
 
         <Header />
+        
         <h2>Fundamentos React</h2>
 
         <div className="Cards">
-            <Card title='#04 - Componente com Filhos' color='##00FFFF'>
+            <Card title='#08 - Comunicaçao Direta' color='#542733'>                             
+                <Direta></Direta>
+            </Card>
+            
+            <Card title='#07 - Renderizacao Condicional' color='#982395'>
+                <ParOuImpar numero={33}/>
+                <UsuarioInfo usuario={{ nome: 'Demis'}}/>                
                 
+            </Card>
+
+            <Card title='#06 - Desafio Repeticao' color='#5BB12F'>
+                <ListaProdutos/>
+            </Card>
+            
+            <Card title='#05 - Repetiçao' color='#273746'>
+                <ListaAlunos></ListaAlunos>
+            </Card>
+
+            <Card title='#04 - Componente com Filhos' color='##00FFFF'>        
                 <Familia sobrenome='Silva'>
                     <FamiliaMembro nome='Demis' />
                     <FamiliaMembro nome='Deijanira' />
@@ -28,7 +56,7 @@ export default () =>
                 </Familia>
             </Card>
 
-            <Card title='#03 - Desafio Aleatório' color='#800080'>
+            <Card title='#03 - Desafio Aleatório' color='#5BB12F'>
                 <Aleatorio min={30} max={100} />
             </Card>
 
