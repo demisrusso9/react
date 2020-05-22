@@ -2,7 +2,7 @@ import React from 'react'
 import produtos from '../../data/produtos'
 import '../repeticao/ListaProdutos.css'
 
-export default props => {
+export default () => {
 
     const tabelaProdutos = produtos.map(produto => {
         return <tr key={produto.id}>
